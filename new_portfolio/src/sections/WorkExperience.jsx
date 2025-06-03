@@ -4,7 +4,7 @@ function WorkExperience() {
   return (
     <div>
       {/* Work Experience Section */}
-      <div className="py-12 px-6 mt-4">
+      <div className="py-12 px-6 mt-4" id="exp">
         <div className="mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-black text-center mb-12">
             WORK EXPERIENCE

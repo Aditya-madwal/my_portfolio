@@ -7,6 +7,8 @@ import {
   ExternalLink,
 } from "lucide-react";
 
+import Profile from "../assets/me_linkedin.png";
+
 function Hero() {
   return (
     <div>
@@ -52,7 +54,7 @@ function Hero() {
           <div className="flex flex-col items-center lg:items-end h-full w-full">
             <div className="h-full w-full">
               <img
-                src="https://images.unsplash.com/photo-1747901718105-bf9beb57ba3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+                src={Profile}
                 alt="Profile"
                 className="h-full w-full object-cover rounded-sm"
               />
