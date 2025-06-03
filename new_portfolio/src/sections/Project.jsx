@@ -66,10 +66,13 @@ function Project() {
       ))}
 
       <div className="flex justify-center mt-4">
-        <button className="bg-[#1d1d1d] text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-gray-800 transition-colors w-fit">
+        <a
+          className="bg-[#1d1d1d] text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 w-fit transition-all duration-300 ease-in-out hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_black] cursor-pointer hover:text-black hover:bg-purple-400 hover:border-black hover:border"
+          href="https://github.com/aditya-madwal/">
+          {" "}
           VIEW MY GITHUB
           <ExternalLink size={18} />
-        </button>
+        </a>
       </div>
     </div>
   );

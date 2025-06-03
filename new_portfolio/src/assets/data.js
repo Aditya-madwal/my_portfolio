@@ -37,9 +37,8 @@ const expData = [
         duration: "Feb 2025 – Apr 2025",
         points: [
             "Worked on 4+ backend projects focused on building scalable RESTful APIs using Django and Django REST Framework.",
-            "Integrated Azure Email Services and Azure Communication Services, enabling 100% automated client notifications.",
-            "Resolved production bugs, reducing downtime by 15% and improving system stability.",
-            "Optimized database schema and queries for a 20% reduction in data redundancy and faster API response times.",
+            "Resolved production bugs, reducing downtime and improving system stability.",
+            "Optimized database schema and queries for a reduction in data redundancy and faster API response times.",
         ],
     },
     {
