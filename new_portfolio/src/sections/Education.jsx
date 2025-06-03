@@ -4,7 +4,7 @@ function Education() {
   return (
     <div>
       {/* Education Section */}
-      <div className="py-16 px-6">
+      <div className="py-16 px-6" id="education">
         <h2 className="text-4xl lg:text-5xl font-bold text-[#1d1d1d] text-center mb-12">
           ACADEMIC JOURNEY SO FAR
         </h2>

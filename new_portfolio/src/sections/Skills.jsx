@@ -1,5 +1,5 @@
 import React from "react";
-
+import { techskills } from "../assets/data.js";
 function Skills() {
   return (
     <div className="px-6">
@@ -10,27 +10,7 @@ function Skills() {
 
         {/* Skills Grid */}
         <div className="flex flex-wrap gap-4 max-w-6xl mx-auto">
-          {[
-            "PYTHON",
-            "JAVASCRIPT",
-            "JAVA",
-            "DJANGO",
-            "DJANGO REST FRAMEWORK",
-            "REACT JS",
-            "NODE JS",
-            "TAILWIND CSS",
-            "POSTGRESQL",
-            "POSTMAN",
-            "GIT",
-            "GITHUB",
-            "VISUAL STUDIO CODE",
-            "PYCHARM",
-            "FIGMA",
-            "UI DESIGNS",
-            "USER RESEARCH",
-            "WIREFRAMING",
-            "PROTOTYPING",
-          ].map((skill, index) => (
+          {techskills.map((skill, index) => (
             <div
               key={index}
               className="bg-transparent border-2 border-black rounded-full px-6 py-3 text-center transition-all duration-300 ease-in-out hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_black] cursor-pointer">

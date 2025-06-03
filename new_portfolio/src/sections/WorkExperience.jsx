@@ -1,44 +1,34 @@
 import React from "react";
+import { expData } from "../assets/data.js";
+import { ArrowRight } from "lucide-react";
 
 function WorkExperience() {
   return (
     <div>
       {/* Work Experience Section */}
-      <div className="py-12 px-6 mt-4" id="exp">
+      <div className="py-12 px-6 mt-4" id="experience">
         <div className="mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#1d1d1d] text-center mb-12">
             WORK EXPERIENCE
           </h2>
 
           {/* Experience Cards */}
-          <ExperienceCard
-            title="Frontend Developer"
-            company="TechNova"
-            duration="Jan 2023 – Dec 2023"
-            points={[
-              "Developed responsive UI components using React and Tailwind CSS.",
-              "Collaborated with UX designers to implement clean and modern interfaces.",
-              "Optimized page load times by 40% using lazy loading and code splitting.",
-            ]}
-          />
-
-          <ExperienceCard
-            title="Backend Engineer"
-            company="InnoSoft"
-            duration="Mar 2022 – Dec 2022"
-            points={[
-              "Built scalable REST APIs using Django and PostgreSQL.",
-              "Implemented JWT authentication and role-based access control.",
-              "Refactored legacy codebase to improve maintainability and performance.",
-            ]}
-          />
+          {expData.map((exp, index) => (
+            <ExperienceCard
+              key={index}
+              title={exp.title}
+              company={exp.company}
+              duration={exp.duration}
+              points={exp.points}
+            />
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-function ExperienceCard({ title, company, description, duration, points }) {
+function ExperienceCard({ title, company, duration, points }) {
   const firstLetter = company.charAt(0).toUpperCase();
 
   return (
@@ -47,7 +37,9 @@ function ExperienceCard({ title, company, description, duration, points }) {
         {/* Logo and Date */}
         <div className="flex flex-col items-center justify-center w-full lg:w-[20%]">
           <div className="w-36 h-36 bg-[#FFFFFF] rounded-full flex items-center justify-center mb-4">
-            <span className="text-8xl font-bold text-black">{firstLetter}</span>
+            <span className="text-8xl font-bold text-[#1d1d1d]">
+              {firstLetter}
+            </span>
           </div>
           <span className="text-[#FFFFFF] font-medium text-sm">{duration}</span>
         </div>
@@ -60,7 +52,8 @@ function ExperienceCard({ title, company, description, duration, points }) {
           <div className="space-y-3">
             {points.map((point, index) => (
               <div key={index} className="flex items-start gap-3">
-                <span className="text-[#FFFFFF] mt-1">→</span>
+                <ArrowRight className="text-white mt-1 w-4 h-4" />
+
                 <p className="text-[#FFFFFF]">{point}</p>
               </div>
             ))}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import navItems from "../assets/data.js";
+import { navItems } from "../assets/data.js";
 import { Home, User, BookOpen, Briefcase, Folder } from "lucide-react";
 
 const Navbar = () => {

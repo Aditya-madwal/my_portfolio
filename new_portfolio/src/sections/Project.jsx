@@ -6,34 +6,30 @@ import {
   MessageCircle,
   ExternalLink,
 } from "lucide-react";
+import { projectData } from "../assets/data.js";
 
-function ProjectCard() {
+function ProjectCard({ project }) {
   return (
     <div className="flex justify-center py-3">
-      <div className="flex  flex-col bg-[white] rounded-xl overflow-hidden w-full max-w-6xl border border-black border-2">
-        {/* <div className="h-48 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center">
-          <span className="text-white text-lg font-medium">Project Image</span>
-        </div> */}
-
-        {/* Card Content */}
+      <div className="flex flex-col bg-white rounded-xl overflow-hidden w-full max-w-6xl border-[#1d1d1d] border-2">
         <div className="p-6">
           {/* Project Name and GitHub Link */}
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-2xl font-bold text-black">
-              E-Commerce Platform
+            <h3 className="text-2xl font-bold text-[#1d1d1d]">
+              {project.name}
             </h3>
             <a
-              href="#"
-              className="w-10 h-10 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
-              <Github className="w-5 h-5 text-white" />
+              className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_black] cursor-pointer hover:text-black hover:bg-purple-400 hover:border-black hover:border"
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer">
+              <Github className="w-5 h-5" />
             </a>
           </div>
 
           {/* Description */}
           <p className="text-gray-600 text-sm leading-relaxed mb-4">
-            A full-stack e-commerce platform built with Django and React.
-            Features include user authentication, product catalog, shopping
-            cart, and payment integration with secure checkout process.
+            {project.description}
           </p>
 
           {/* Tech Stack */}
@@ -42,21 +38,13 @@ function ProjectCard() {
               Tech Stack
             </span>
             <div className="flex flex-wrap gap-2">
-              <span className="px-4 py-2 bg-[#1d1d1d] text-white text-sm rounded-full font-medium">
-                Django
-              </span>
-              <span className="px-4 py-2 bg-[#1d1d1d] text-white text-sm rounded-full font-medium">
-                Django
-              </span>
-              <span className="px-4 py-2 bg-[#1d1d1d] text-white text-sm rounded-full font-medium">
-                Django
-              </span>
-              <span className="px-4 py-2 bg-[#1d1d1d] text-white text-sm rounded-full font-medium">
-                Django
-              </span>
-              <span className="px-4 py-2 bg-[#1d1d1d] text-white text-sm rounded-full font-medium">
-                Django
-              </span>
+              {project.techStack.map((tech, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 bg-[#1d1d1d] text-white text-sm rounded-full font-medium">
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         </div>
@@ -67,17 +55,18 @@ function ProjectCard() {
 
 function Project() {
   return (
-    <div className="px-6 pb-12">
+    <div className="px-6 pb-12" id="projects">
       <div className="mx-auto">
-        <h2 className="text-4xl lg:text-5xl font-bold text-black text-center mb-12">
+        <h2 className="text-4xl lg:text-5xl font-bold text-[#1d1d1d] text-center mb-12">
           FEATURED PROJECTS
         </h2>
       </div>
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      {projectData.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
+
       <div className="flex justify-center mt-4">
-        <button className="bg-black text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-gray-800 transition-colors w-fit">
+        <button className="bg-[#1d1d1d] text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-gray-800 transition-colors w-fit">
           VIEW MY GITHUB
           <ExternalLink size={18} />
         </button>

@@ -10,7 +10,7 @@ import {
 function About() {
   return (
     <div>
-      <div className="bg-[#1d1d1d] text-[#FFFFFF] py-16 px-6 mt-4">
+      <div className="bg-[#1d1d1d] text-[#FFFFFF] py-16 px-6 mt-4" id="about">
         <div className="max-w-6xl mx-auto text-center">
           {/* Section Title */}
           <h2 className="text-4xl lg:text-5xl font-bold text-[##FFFFFF] mb-8">
