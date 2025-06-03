@@ -9,16 +9,16 @@ import {
 
 function About() {
   return (
-    <div>
-      <div className="bg-[#1d1d1d] text-[#FFFFFF] py-16 px-6 mt-4" id="about">
-        <div className="max-w-6xl mx-auto text-center">
+    <div id="about">
+      <div className="bg-[#1d1d1d] text-[#FFFFFF] py-16 px-6 m-4 mx-auto">
+        <div className="mx-auto text-center">
           {/* Section Title */}
           <h2 className="text-4xl lg:text-5xl font-bold text-[##FFFFFF] mb-8">
             ABOUT ME
           </h2>
 
           {/* Description */}
-          <p className="text-lg lg:text-xl text-[#FFFFFF] leading-relaxed mb-12 max-w-7xl mx-auto">
+          <p className="text-lg lg:text-xl text-[#FFFFFF] leading-relaxed mb-12">
             I am a Computer Science Engineering undergraduate at K.I.E.T Group
             of Institutions. With a strong passion for web development, I enjoy
             turning ideas into interactive, user-focused digital experiences. I
