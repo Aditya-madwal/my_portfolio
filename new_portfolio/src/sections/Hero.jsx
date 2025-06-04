@@ -26,7 +26,7 @@ function Hero() {
               href="/Aditya_Madwal_resume.pdf"
               download
               className="bg-black text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 w-fit transition-all duration-300 ease-in-out hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_black] cursor-pointer hover:text-black hover:bg-white hover:border-black hover:border">
-              VIEW MY RESUME
+              DOWNLOAD MY RESUME
               <ExternalLink size={18} />
             </a>
             <div className="flex space-x-4">
