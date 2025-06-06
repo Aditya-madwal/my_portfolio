@@ -36,7 +36,7 @@ const expData = [
         company: "Devneural Solutions",
         duration: "Feb 2025 – Apr 2025",
         points: [
-            "Worked on 4+ backend projects focused on building scalable RESTful APIs using Django and Django REST Framework.",
+            "Worked on 4+ projects, focused on building scalable RESTful APIs using Django and Django REST Framework.",
             "Resolved production bugs, reducing downtime and improving system stability.",
             "Optimized database schema and queries for a reduction in data redundancy and faster API response times.",
         ],
