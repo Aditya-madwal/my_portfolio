@@ -79,6 +79,13 @@ const projectData = [
         github: "https://github.com/aditya-madwal/Aristotle.ai",
         techStack: ["React", "Django REST", "Gemini API", "IPFS", "PostgreSQL"],
     },
+    {
+    name: "MailBoard",
+    description:
+        "A Smart email management SaaS platform built with Next.js, featuring AI-powered categorization, Auto Email-to-Task conversions, multi-inbox support, and smart email generation using Gemini API.",
+    github: "https://github.com/aditya-madwal/mailboard",
+    techStack: ["Next.js", "Tailwind CSS", "Radix UI", "Gemini API", "JWT", "MongoDB", "Google API"],
+}
 ];
 
 export { techskills, navItems, expData, projectData };
