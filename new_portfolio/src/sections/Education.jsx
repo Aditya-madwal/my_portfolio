@@ -2,7 +2,7 @@ import React from "react";
 
 function Education() {
   return (
-    <div className="max-w-7xl">
+    <div className="w-screen">
       {/* Education Section */}
       <div className="py-16 px-6" id="education">
         <h2 className="text-4xl lg:text-5xl font-bold text-[#1d1d1d] text-center mb-12">
