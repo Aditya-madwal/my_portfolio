@@ -65,13 +65,13 @@ const expData = [
 ];
 
 const projectData = [
-    {
-        name: "FriendsBook",
-        description:
-            "A social media app with real-time chat, post creation, and friend requests. Built using Django, React, WebSockets, and PostgreSQL.",
-        github: "https://github.com/aditya-madwal/FriendsBook",
-        techStack: ["Django", "React", "WebSockets", "SMTP", "PostgreSQL"],
-    },
+       {
+    name: "MailBoard",
+    description:
+        "A Smart email management SaaS platform built with Next.js, featuring AI-powered categorization, Auto Email-to-Task conversions, multi-inbox support, and smart email generation using Gemini API.",
+    github: "https://github.com/aditya-madwal/mailboard",
+    techStack: ["Next.js", "Tailwind CSS", "Radix UI", "Gemini API", "JWT", "MongoDB", "Google API"],
+},
     {
         name: "Aristotle.ai",
         description:
@@ -80,12 +80,12 @@ const projectData = [
         techStack: ["React", "Django REST", "Gemini API", "IPFS", "PostgreSQL"],
     },
     {
-    name: "MailBoard",
-    description:
-        "A Smart email management SaaS platform built with Next.js, featuring AI-powered categorization, Auto Email-to-Task conversions, multi-inbox support, and smart email generation using Gemini API.",
-    github: "https://github.com/aditya-madwal/mailboard",
-    techStack: ["Next.js", "Tailwind CSS", "Radix UI", "Gemini API", "JWT", "MongoDB", "Google API"],
-}
+        name: "FriendsBook",
+        description:
+            "A social media app with real-time chat, post creation, and friend requests. Built using Django, React, WebSockets, and PostgreSQL.",
+        github: "https://github.com/aditya-madwal/FriendsBook",
+        techStack: ["Django", "React", "WebSockets", "SMTP", "PostgreSQL"],
+    }
 ];
 
 export { techskills, navItems, expData, projectData };
