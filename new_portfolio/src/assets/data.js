@@ -11,13 +11,14 @@ const navItems = [
 const techskills = [
     "PYTHON",
     "JAVASCRIPT",
-    "JAVA",
     "DJANGO",
     "DJANGO REST FRAMEWORK",
     "REACT JS",
     "NODE JS",
+    "NEXT JS",
     "TAILWIND CSS",
     "POSTGRESQL",
+    "MONGO DB"
     "POSTMAN",
     "GIT",
     "GITHUB",
