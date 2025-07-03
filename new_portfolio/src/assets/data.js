@@ -18,7 +18,7 @@ const techskills = [
     "NEXT JS",
     "TAILWIND CSS",
     "POSTGRESQL",
-    "MONGO DB"
+    "MONGO DB",
     "POSTMAN",
     "GIT",
     "GITHUB",
